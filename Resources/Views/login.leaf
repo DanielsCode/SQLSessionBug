@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+
+            <form method="post">
+                <input type="username" name="username" id="usernae"  placeholder="Username">
+                <input type="password" id="password" name="password" placeholder="Password">
+              <button type="submit">Log in</button>
+            </form>
+
+  </body>
+</html>
