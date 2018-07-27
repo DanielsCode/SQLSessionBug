@@ -25,6 +25,10 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     databases.add(database: database, as: .mysql)
     services.register(databases)
     
+    // Bugfix
+    services.register(DatabaseConnectionPoolConfig(maxConnections: 16))
+    
+    
     /// Register Template Engine LEAF
     try services.register(LeafProvider())
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
